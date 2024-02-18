@@ -8,6 +8,10 @@ export const siteConfig = {
       title: "Home",
       href: "/",
     },
+    {
+      title: "Learn",
+      href: "/learn",
+    },
   ],
   links: {
     github: "https://github.com/yokesh-ks/TailwindXpress",
