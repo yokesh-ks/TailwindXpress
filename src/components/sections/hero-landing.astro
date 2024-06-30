@@ -1,0 +1,37 @@
+---
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import { Icon } from "astro-icon/components";
+import { siteConfig } from "@/config/site";
+---
+
+<section class="space-y-6 py-12 sm:py-20 lg:py-20">
+  <div class="container flex max-w-5xl flex-col items-center gap-5 text-center">
+    <h1
+      class="text-balance font-heading text-4xl sm:text-5xl md:text-6xl lg:text-[66px]"
+    >
+      <span class="text-gradient_indigo-purple font-extrabold">
+        TailwindXpress:
+      </span>
+      Unleash Your CSS Potential
+    </h1>
+
+    <p
+      class="max-w-2xl text-balance leading-normal text-muted-foreground sm:text-xl sm:leading-8"
+    >
+      Unlock Tailwind CSS with TailwindXpress! Access curated blogs, code
+      snippets, a components library, and a handy cheatsheet. TailwindXpress is
+      your hub for CSS creativity and efficiency.
+    </p>
+
+    <div class="flex justify-center space-x-2 md:space-x-4">
+      <a
+        href="/guides"
+        class={cn(buttonVariants({ size: "lg", rounded: "full" }), "gap-2")}
+      >
+        <span>Get Started</span>
+        <Icon name="lucide:arrow-right" class="size-4" />
+      </a>
+    </div>
+  </div>
+</section>

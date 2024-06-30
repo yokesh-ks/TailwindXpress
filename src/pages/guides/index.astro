@@ -1,0 +1,29 @@
+---
+import GuideCard from "@/components/cards/guide-card.astro";
+import DocsPageHeader from "@/components/page-header.astro";
+import DocsLayout from "@/layouts/docs-layout.astro";
+import { getGuides } from "@/lib/fetchers";
+
+const guides = await getGuides();
+---
+
+<DocsLayout title="Blog" description="Lorem ipsum dolor sit amet">
+  <section class="container max-w-6xl py-10">
+    <DocsPageHeader
+      heading="Guides"
+      text="Tailwind CSS Mastery Library is your go-to resource for mastering every aspect of the popular utility-first CSS framework. With clear examples, detailed explanations, and practical use cases, elevate your web development skills and create stunning, responsive designs effortlessly."
+    />
+
+    {
+      guides?.length ? (
+        <div class="grid gap-4 md:grid-cols-2 md:gap-6">
+          {guides.map((guide) => (
+            <GuideCard {...guide} />
+          ))}
+        </div>
+      ) : (
+        <p>No guides published.</p>
+      )
+    }
+  </section>
+</DocsLayout>
