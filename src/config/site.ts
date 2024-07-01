@@ -12,28 +12,25 @@ export const footerLinks: SidebarNavItem[] = [
   {
     title: "Company",
     items: [
-      { title: "About", href: "#" },
-      { title: "Enterprise", href: "#" },
-      { title: "Partners", href: "#" },
-      { title: "Jobs", href: "#" },
+      { title: "About", href: "https://www.ingeniousclan.com/" },
+      { title: "Mission & Vision", href: "https://www.ingeniousclan.com/#about-us" },
     ],
   },
   {
     title: "Product",
     items: [
-      { title: "Security", href: "#" },
-      { title: "Customization", href: "#" },
-      { title: "Customers", href: "#" },
-      { title: "Changelog", href: "#" },
+      { title: "TailwindXpress", href: "https://tailwind.ingeniousclan.com" },
+      { title: "Timestamp", href: "https://timestamp.ingeniousclan.com" },
+      { title: "Readme", href: "https://readme.ingeniousclan.com/" },
     ],
   },
   {
-    title: "Docs",
+    title: "Guides",
     items: [
-      { title: "Introduction", href: "#" },
-      { title: "Installation", href: "#" },
-      { title: "Components", href: "#" },
-      { title: "Code Blocks", href: "#" },
+      { title: "Accessibility", href: "/guides/accessibility" },
+      { title: "Backgrounds", href: "/guides/backgrounds" },
+      { title: "Borders", href: "/guides/borders" },
+      { title: "Effects", href: "/guides/effects" },
     ],
   },
 ];
