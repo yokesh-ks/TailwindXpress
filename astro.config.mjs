@@ -28,6 +28,6 @@ export default defineConfig({
   ],
   output: "hybrid",
   adapter: vercel({
-    analytics: true,
+    webAnalytics: { enabled: true }
   }),
 });
