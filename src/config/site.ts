@@ -10,7 +10,7 @@ export const siteConfig: SiteConfig = {
 
 export const footerLinks: SidebarNavItem[] = [
   {
-    title: "Company",
+    title: "IngeniousClan",
     items: [
       { title: "About", href: "https://www.ingeniousclan.com/" },
       { title: "Mission & Vision", href: "https://www.ingeniousclan.com/#about-us" },
